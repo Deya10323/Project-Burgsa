@@ -19,7 +19,7 @@
         }
 
         header {
-            background-color: #004d40;
+            background-color: #012a4a;
             padding: 20px;
             color: white;
         }
@@ -48,11 +48,11 @@
         }
 
         nav ul li a:hover {
-            color: #80cbc4;
+            color: #c2d6dd;
         }
 
         .hero {
-            background-color: #c5e1a5;
+            background-color: #c2d6dd;
             padding: 60px 20px;
             text-align: center;
             font-size: 2rem;
@@ -68,7 +68,7 @@
         .attractions h3 {
             margin-bottom: 20px;
             font-size: 1.8rem;
-            color: #00695c;
+            color: #014f86;
         }
 
         .grid-container {
@@ -103,7 +103,7 @@
             font-weight: bold;
             font-size: 1.2rem;
             margin-top: 5px;
-            color: #1b5e20;
+            color: #014f86;
         }
 
         .modal-toggle {
@@ -144,7 +144,7 @@
         .modal-box h3 {
             margin: 10px 0;
             font-size: 1.5rem;
-            color: #004d40;
+            color: #014f86;
         }
 
         .modal-box p {
@@ -173,7 +173,7 @@
         .events h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #33691e;
+            color: #014f86;
         }
 
         .event-card {
@@ -181,7 +181,7 @@
             margin: 20px auto;
             padding: 30px;
             max-width: 800px;
-            border-left: 6px solid #7cb342;
+            border-left: 6px solid #2c7da0;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             transition: background-color 0.3s;
         }
@@ -193,7 +193,7 @@
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #004d40;
+            background-color: #012a4a;
             color: white;
             font-size: 0.9rem;
         }
