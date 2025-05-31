@@ -12,7 +12,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', sans-serif;
+            font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             background: linear-gradient(to right, #e0f7fa, #fff);
             color: #333;
             line-height: 1.6;
@@ -56,7 +56,6 @@
             color: #c2d6dd;
         }
 
-        /* Dropdown menu */
         nav ul li.dropdown {
             position: relative;
         }
@@ -314,8 +313,8 @@
 
     <section class="events">
         <h3>Събития през 2025г.</h3>
-        <div class="event-card"><p>Фестивал на пясъчните скулптури – юли 2025</p></div>
-        <div class="event-card"><p>Spirit of Burgas – август 2025</p></div>
+        <div class="event-card"><p>Spice Music Festival – 8–9 август 2025</p></div>
+        <div class="event-card"><p>Fun and Sun Weekend – 30 май – 1 юни 2025</p></div>
     </section>
 </main>
 
