@@ -12,7 +12,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', sans-serif;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             background: linear-gradient(to right, #e0f7fa, #fff);
             color: #333;
             line-height: 1.6;
@@ -99,11 +99,12 @@
             margin-bottom: 10px;
         }
 
-        .modal-trigger p {
+        .modal-trigger a {
             font-weight: bold;
             font-size: 1.2rem;
             margin-top: 5px;
             color: #014f86;
+            text-decoration: none;
         }
 
         .modal-toggle {
@@ -133,6 +134,7 @@
             animation: fadeIn 0.4s ease;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
             text-align: center;
+           
         }
 
         .modal-box img {
@@ -145,10 +147,12 @@
             margin: 10px 0;
             font-size: 1.5rem;
             color: #014f86;
+            
         }
 
-        .modal-box p {
+        .modal-box a {
             font-size: 1rem;
+            text-decoration: none;
         }
 
         .close-btn {
@@ -236,7 +240,7 @@
             <label for="modal1" class="card">
                 <div class="modal-trigger">
                     <img src="https://www.primeabg.com/upload/userfiles/images/36328561_2401629849850831_5356514724299145216_n.jpg" alt="Морската градина">
-                    <p>Морската градина</p>
+                    <a href="morska.html">Морската градина</a>
                 </div>
             </label>
             <div class="modal">
@@ -253,7 +257,7 @@
             <label for="modal2" class="card">
                 <div class="modal-trigger">
                     <img src="https://www.gotoburgas.com/uploads/property/1e2abafbeeb5f203cdf11fd4e7c0caf4.png" alt="Остров Света Анастасия">
-                    <p>Остров Света Анастасия</p>
+                    <a href="Sv Anastasiq.html">Остров Света Анастасия</a>
                 </div>
             </label>
             <div class="modal">
