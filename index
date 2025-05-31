@@ -12,7 +12,7 @@
         }
 
         body {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: 'Segoe UI', sans-serif;
             background: linear-gradient(to right, #e0f7fa, #fff);
             color: #333;
             line-height: 1.6;
@@ -38,6 +38,11 @@
             display: flex;
             list-style: none;
             gap: 20px;
+            position: relative;
+        }
+
+        nav ul li {
+            position: relative;
         }
 
         nav ul li a {
@@ -49,6 +54,41 @@
 
         nav ul li a:hover {
             color: #c2d6dd;
+        }
+
+        /* Dropdown menu */
+        nav ul li.dropdown {
+            position: relative;
+        }
+
+        nav ul li.dropdown .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #014f86;
+            padding: 10px 0;
+            list-style: none;
+            top: 100%;
+            left: 0;
+            min-width: 180px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        nav ul li.dropdown .dropdown-menu li a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        nav ul li.dropdown .dropdown-menu li a:hover {
+            background-color: #21618c;
+        }
+
+        nav ul li.dropdown:hover .dropdown-menu {
+            display: block;
         }
 
         .hero {
@@ -99,12 +139,11 @@
             margin-bottom: 10px;
         }
 
-        .modal-trigger a {
+        .modal-trigger p {
             font-weight: bold;
             font-size: 1.2rem;
             margin-top: 5px;
             color: #014f86;
-            text-decoration: none;
         }
 
         .modal-toggle {
@@ -134,7 +173,6 @@
             animation: fadeIn 0.4s ease;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
             text-align: center;
-           
         }
 
         .modal-box img {
@@ -147,12 +185,10 @@
             margin: 10px 0;
             font-size: 1.5rem;
             color: #014f86;
-            
         }
 
-        .modal-box a {
+        .modal-box p {
             font-size: 1rem;
-            text-decoration: none;
         }
 
         .close-btn {
@@ -220,7 +256,13 @@
         <h1>Чудесата на Бургас</h1>
         <ul>
             <li><a href="#">Начало</a></li>
-            <li><a href="#">Забележителности</a></li>
+            <li class="dropdown">
+                <a href="#">Забележителности</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#modal1">Морската градина</a></li>
+                    <li><a href="#modal2">Остров Света Анастасия</a></li>
+                </ul>
+            </li>
             <li><a href="#">Събития</a></li>
         </ul>
     </nav>
@@ -235,12 +277,11 @@
         <h3>Забележителности в Бургас</h3>
         <div class="grid-container">
 
-            
             <input type="checkbox" id="modal1" class="modal-toggle" hidden />
             <label for="modal1" class="card">
                 <div class="modal-trigger">
                     <img src="https://www.primeabg.com/upload/userfiles/images/36328561_2401629849850831_5356514724299145216_n.jpg" alt="Морската градина">
-                    <a href="morska.html">Морската градина</a>
+                    <p>Морската градина</p>
                 </div>
             </label>
             <div class="modal">
@@ -252,12 +293,11 @@
                 </div>
             </div>
 
-            
             <input type="checkbox" id="modal2" class="modal-toggle" hidden />
             <label for="modal2" class="card">
                 <div class="modal-trigger">
                     <img src="https://www.gotoburgas.com/uploads/property/1e2abafbeeb5f203cdf11fd4e7c0caf4.png" alt="Остров Света Анастасия">
-                    <a href="Sv Anastasiq.html">Остров Света Анастасия</a>
+                    <p>Остров Света Анастасия</p>
                 </div>
             </label>
             <div class="modal">
@@ -284,3 +324,4 @@
 </footer>
 </body>
 </html>
+
