@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакти | Бургас</title>
+  <style>
+    :root {
+      --main-bg: linear-gradient(135deg, #a8d0e6, #f8f9fa);
+      --primary: #15304a;
+      --accent: #2684a8;
+      --light: #fff;
+      --hover: #2c6ea4;
+      --text: #2b2b2b;
+      --muted: #666;
+      --radius: 10px;
+      --shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--main-bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--light);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header nav h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    header nav ul li a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    header nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    section {
+      background: var(--light);
+      padding: 30px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-6px);
+    }
+
+    section h2 {
+      color: var(--primary);
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 12px 0;
+    }
+
+    .contact-info p span {
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .faq details {
+      margin-bottom: 12px;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: var(--radius);
+      font-size: 16px;
+    }
+
+    form input:focus, form textarea:focus {
+      border-color: var(--accent);
+      outline: none;
+    }
+
+    form button {
+      background-color: var(--accent);
+      color: var(--light);
+      padding: 12px 20px;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    form button:hover {
+      background-color: #1d6782;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: var(--radius);
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Чудесата на Бургас</h1>
+      <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="zabelezhitelnosti.html">Забележителности</a></li>
+        <li><a href="sabitiya.html">Събития</a></li>
+        <li><a href="kontakti.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Свържете се с нас</h1>
+    <p class="subtitle">Попълнете формата или използвайте контактите по-долу, за да се свържете с екипа ни в Бургас</p>
+
+    <div class="grid">
+      <section class="contact-info">
+        <h2>📌 Адрес и контакт</h2>
+        <p><span>Адрес:</span> гр. Бургас, ул. "Александровска" №1</p>
+        <p><span>Тел.:</span> +359 56 123 456</p>
+        <p><span>Имейл:</span> info@burgas.bg</p>
+        <p><span>Работно време:</span> Пон–Пет: 09:00 – 17:30</p>
+      </section>
+
+      <section>
+        <h2>📨 Изпратете ни съобщение</h2>
+        <form action="mailto:info@burgas.bg" method="post" enctype="text/plain">
+          <label for="name">Вашето име *</label>
+          <input type="text" id="name" name="Име" required placeholder="Иван Иванов">
+
+          <label for="email">Вашият имейл *</label>
+          <input type="email" id="email" name="Имейл" required placeholder="example@mail.bg">
+
+          <label for="subject">Тема</label>
+          <input type="text" id="subject" name="Тема" placeholder="Въпрос относно...">
+
+          <label for="message">Съобщение *</label>
+          <textarea id="message" name="Съобщение" rows="6" required placeholder="Вашето съобщение..."></textarea>
+
+          <button type="submit">Изпрати</button>
+        </form>
+      </section>
+
+      <section class="faq">
+        <h2>❓ Често задавани въпроси</h2>
+        <details>
+          <summary>Как да стигна до Бургас?</summary>
+          <p>С автомобил, влак, автобус или директен полет до Летище Бургас.</p>
+        </details>
+        <details>
+          <summary>Има ли безплатен Wi-Fi в центъра?</summary>
+          <p>Да, в централната зона на Бургас има безплатен Wi-Fi.</p>
+        </details>
+        <details>
+          <summary>Мога ли да резервирам гид?</summary>
+          <p>Разбира се. Свържете се с туристическия център на града.</p>
+        </details>
+      </section>
+
+      <section class="map">
+        <h2>🗺️ Къде се намираме</h2>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11752.172761920674!2d27.464914850000002!3d42.49746990000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a694f16dd0b7f5%3A0x400a01269bf5a20!2zQnVyZ2FzLCDQkdC40YHRgtGA0L7QtNGC0LrQsNGP!5e0!3m2!1sbg!2sbg!4v1684413214403!5m2!1sbg!2sbg" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </section>
+    </div>
+
+    <footer>
+      &copy; 2025 Бургас | Всички права запазени.
+    </footer>
+  </main>
+
+</body>
+</html>
