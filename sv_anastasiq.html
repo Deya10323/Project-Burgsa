@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Морската градина</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: linear-gradient(to right, #e0f7fa, #fff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #012a4a;
+            padding: 20px;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #c2d6dd;
+        }
+
+        .hero-image {
+            position: relative;
+            height: 350px;
+            background-size: cover;
+            background-image: url(Ostrov.jpg);
+            background-position: center;
+            filter: brightness(70%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-image h2 {
+            position: relative;
+            color: white;
+            font-size: 3rem;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            font-size: 1.1rem;
+            
+        }
+        
+        .content h3{
+            margin-top: 20px;
+        }
+
+        .content table{
+            width: 80%;
+            margin-top: 7px;
+            padding-left: 20px;
+        }
+        
+       .content table, th, td{
+        border: 1px solid #000;
+        border-collapse: collapse;
+        text-align: center;
+       }
+
+       .inf ul{
+        margin-top: 10px;
+       }
+
+       .price{
+        padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            font-size: 1.1rem;
+       }
+
+       .price img{
+            float: right;
+            border-radius: 2px;
+            width: 400px;
+       }
+
+       .price ul{
+        text-wrap: wrap;
+       }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #012a4a;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <h1>Чудесата на Бургас</h1>
+        <ul>
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="#">Забележителности</a></li>
+            <li><a href="#">Събития</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero-image">
+    <h2>Остров Света Анастасия</h2>
+</section>
+<div class="pos_cen">
+<section class="content">
+    <ul>
+        <li>Остров Света Анастасия е едно от най-романтичните места по нашето Черноморие. Островът е забулен в мистерия и за него се разказват стотици легенди и истории. Островът е бил манастир, а за известно време е служил и за затвор. Площта му е близо 9 декара. Намира се на 6 км от брега. Днес островът предлага на гостите си ресторант с морска кухня „100 години назад“, кафене-лекарна, малък амфитеатър, музей, разказващ историята на острова, както и малък плаж. За онези посетители, които желаят да се насладят на островната романтиката за повече от ден, се предоставя възможност да пренощуват на острова. До острова може да се стигне с двата общински катамарана – „Бургус“ и „Анастасия“, които правят редовни курсове от Магазия 1 на Пристанище Бургас.</li>
+    </ul>
+    <h3>График за пътуване с кораб</h3>
+    <table>
+        <tr>
+            <th>Тръгване от <br>"Магазия 1"</th>
+            <th>Акостиране на Острова</th>
+            <th>Тръгване от острова</th>
+            <th>Акостиране на <br>"Магазия 1"</th>
+        </tr>
+        <tr>
+            <td>10:00 часа</td>
+            <td>10:30 часа</td>
+            <td>12:30 часа</td>
+            <td>13:00 часа</td>
+        </tr>
+        <tr>
+            <td>13:30 часа</td>
+            <td>14:00 часа</td>
+            <td>16:00 часа</td>
+            <td>16:30 часа</td>
+        </tr>
+        <tr>
+            <td>17:00 часа</td>
+            <td>17:30 часа</td>
+            <td>19:00 часа</td>
+            <td>19:30 часа</td>
+        </tr>
+    </table>
+    <div class="inf">
+    <ul>
+        <li>Как да стигнете до "Магазия 1"? <br>"Магазия 1“ се намира в непосредствена близост до входа на Зоната за обществен достъп на Пристанище Бургас, който е на 5 мин. пеша от входа на пристанището по протежение на ул. "Княз Александър </li>
+    </ul>
+    </div>
+    <div class="price">
+        <h3>Цени</h3>
+        <h4>Цени за пътуване с кораб</h4>
+        <ul>
+            <li>Двупосочен, стандартен билет за пътуване с кораб - 18,00 лв.</li>
+            <li>Двупосочен билет за ученици и пенсионери - 16,00 лв.</li>
+            <li>Двупосочен билет за пътуване за деца от 3 до 7 ненавършени години - 8,00 лв.</li>
+            <img src="Ostrov_1.jpg">
+            <li>Двупосочен билет за пътуване с кораб, при групи над 20 човека - 16,00 лв./човек</li>
+            <li>Двупосочен билет при ученически групи и пенсионерски групи, над 20 пътуващи - 14,00 лв. на човек</li>
+            <li>Двупосочен билет за деца до 3 години - 3 лв.</li>
+            <li>Двупосочен билет за хора с увреждания - 9лв</li>
+        </ul>
+        <h4>Цени за посещение на музей</h4>
+        <ul>
+            <li>Стандартен билет - 6,00 лв.</li>
+            <li>За ученици и пенсионери - 5,00 лв.</li>
+            <li>За деца от 3 до 7 ненавършени години - 3,00 лв.</li>
+            <li>При група възрастни, над 20 човека - 5,00 лв./човек</li>
+            <li>При посещение на група ученици или пенсионери, над  20 човека - 4 лв. /човек</li>
+            <li>*Деца до 3 години и хора с увреждания не се таксуват за вход.</li>
+        </ul>
+    </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2025 Бургас. Всички права запазени.</p>
+</footer>
+</body>
+</html>
 
