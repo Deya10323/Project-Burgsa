@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Морската градина</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: linear-gradient(to right, #e0f7fa, #fff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #012a4a;
+            padding: 20px;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #c2d6dd;
+        }
+
+        .hero-image {
+            position: relative;
+            height: 350px;
+            background-size: cover;
+            background-image: url(ezero_vaq.jpg);
+            background-position: center;
+            filter: brightness(70%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-image h2 {
+            position: relative;
+            color: white;
+            font-size: 3rem;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            font-size: 1.1rem;
+            
+        }
+        
+        .content img{
+            float: right;
+            border-radius: 2px;
+            width: 400px;
+
+        }
+        
+        .content ul{
+            text-wrap: wrap;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #012a4a;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <h1>Чудесата на Бургас</h1>
+        <ul>
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="#">Забележителности</a></li>
+            <li><a href="#">Събития</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero-image">
+    <h2>Езеро Вая</h2>
+</section>
+<section class="content">
+    
+    <ul>
+        <li>Местоположение: 1 км западно от гр.Бургас.</li>
+        <li>Дълбочина: до 1,5 м</li>
+        <li>Площ: 28 км² (2760 ха водна повърхност)</li>
+        <li>Ако започнете разходката си по улица „Богориди”, първото нещо, което ще ви заплени още с навлизането ви в парка, ще е невероятната гледка към морето, моста и пристанището, разкриващи се от терасата, която всички бургазлии наричат ”парапета” или „балюстрадата“. Ако можеше да говори, терасата щеше да ви разкаже за хилядите целувки на влюбени двойки, за многобройните замечтани погледи в романтичното море, за звънкия смях на децата, пускащи цветни хвърчила на закачливия вятър, за възрастната двойка, която дълги години всеки ден завършва своята разходка тук и за всичката любов, която Морската градина  е събрала, за да изпрати към морето и да се върне съвсем скоро с морския бриз и солените пръски по пясъка.</li>
+        <img src="ezero_vaq1.jpg">
+        <li>Оттук минава миграционният път „Виа Понтика“ на птиците от Европа към Африка – щъркел, розов пеликан, лешояд, царски орел и много водолюбиви и пойни птици. Голям брой от тях са включени в Червената книга на България. Тук гнездят и зимуват различни видове чапли, гъски, корморани, къдроглавият пеликан, потапници и други. През 1997 г. западната част на езерото Вая е обявена за защитена, за да се опазят колониите от птици, които гнездят там. През 2003 г. е обявено за Влажна зона с международно значение, съгласно Рамсарската Конвенция.</li>
+        <li>Всяка година през месец август се организира бригада за построяване на платформи за гнездене на пеликани и на специално укритие за тяхното наблюдение без да се обезпокояват.</li>
+    </ul>
+</section>
+</div>
+
+<footer>
+    <p>© 2025 Бургас. Всички права запазени.</p>
+</footer>
+</body>
+</html>
