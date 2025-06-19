@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Археологически музей- Бургас</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: linear-gradient(to right, #e0f7fa, #fff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #012a4a;
+            padding: 20px;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #c2d6dd;
+        }
+
+        .hero-image {
+            position: relative;
+            height: 350px;
+            background-size: cover;
+            background-image: url(muzej.jpg);
+            background-position: center;
+            filter: brightness(70%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-image h2 {
+            position: relative;
+            color: white;
+            font-size: 3rem;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 15px 20px;
+            max-width: 1000px;
+            margin: auto;
+            font-size: 1.1rem;
+            
+        }
+        
+        .content h3{
+            margin-top: 20px;
+        }
+
+        .content table{
+            width: 80%;
+            margin-top: 7px;
+            
+        }
+        
+       .content table, th, td{
+        border: 1px solid #000;
+        border-collapse: collapse;
+        text-align: center;
+       }
+
+       .price{
+        padding: 10px 20px 10px 20px;
+            max-width: 1000px;
+            margin: auto;
+            font-size: 1.1rem;
+       }
+
+       .price ul{
+        text-wrap: wrap;
+       }
+
+       .content ul{
+        padding-top: 1px;
+        text-wrap: wrap;
+       }
+
+       .content img{
+         float: right;
+         border-radius: 2px;
+         width: 400px;
+       }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #012a4a;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <h1>Чудесата на Бургас</h1>
+        <ul>
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="#">Забележителности</a></li>
+            <li><a href="#">Събития</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero-image">
+    <h2>Археологически музей- Бургас</h2>
+</section>
+<div class="pos_cen">
+<section class="content">
+    <ul>
+        <li>Археологическият музей е разположен в сградата на девическата гимназия, построена през 1894 г. Архитект на сградата е швейцарецът Херман Майер, проектирал предимно банкови сгради в София, Пловдив и Русе.</li>
+    <h3>Работно време</h3>
+    </ul>
+    <table>
+        <tr>
+            <td>Юни-Септември</td>
+            <td>Понеделни-неделя: 10:00-19:00ч.</td>
+        </tr>
+        <tr>
+            <td>Октомври-Май</td>
+            <td>Вторник-събота: 09:00-17:00ч.</td>
+        </tr>
+    </table>
+    <div class="price">
+        <h3>Цени</h3>
+        <ul>
+            <li>Възрастни: 5.00лв.</li>
+            <li>Ученици/студенти и пенсионери: 2.00лв.</li>
+            
+            <li>Семейство: 8.00лв.</li>
+            <li>Деца до 7 г. и хора с увреждания: Безплатно</li>
+            <li>Придружители на хора с увреждания: 2.00лв.</li>
+    </div>
+    </section>
+    <div class="content">
+        <ul>
+            <li>В експозицията на музея са показани предмети от праисторическите селища в региона от ІV-V хил. пр.Хр.и античните градове от епохата на Древна Тракия, гръцката колонизация на Черно море и от времето на Римската империя.Най-ранните находки в музея са сечива от камък, кремък и кост от новокаменната и каменно-медната епоха от проучени селищни могили. В Бургаския залив са открити и потънали селища от бронзовата епоха (ІІІ хил. пр.Хр.).</li>
+            <li>Многобройните каменни котви с различна големина са свидетелство за развитото корабоплаване в залива още в тази ранна епоха. Откритият край село Черково, Бургаско, меден слитък от минойски тип е доказателство за съществуването на търговски контакти на траките със средиземноморския свят през ХV – ХІІІ столетие пр. Хр. В древното селище Антий, намиращо се при днешната Военноморска база на Бургас, е открита статуя на Аполон, която също е изложена в музея.</li>
+             <img src="muzej_1.jpg">
+            <li>Особено интересна е третата зала на Археологическия музей, където е представен тракийският култов живот през епохата на римското владичество в Тракия (І – ІІІ в.) От този период е съкровището, открито в надгробна тракийска могила край Поморие, където била погребана чрез изгаряне тракийската жрица Лесескепра. Името й е изписано с гръцки букви върху чифт златни обеци. Там са намерени и обредни глинени фигурки, свързани с жреческите й функции. В сбирката има още мраморни релефи и статуетки на различни божества, сред които първо място заема главното тракийско божество – Тракийският конник.</li>
+            <li>На 18 км от Бургас, до днешното село Дебелт, се намират останките от античния град Деултум. Находките, открити при неговото проучване – монети, керамика, накити, са изложени в музея. От разкопките на Селищна могила Бургас в местността Солна нива са изложени многобройни керамични съдове, някои използвани в домакинството, а други – при религиозни ритуали.</li>
+            <li>Музеят има и външна експозиция – сред най-ценните експонати тук е уникалната тракийска гробница – „долмен” от ХІІІ в. пр.Хр. от с. Белеврен. Посетителите могат да видят още възпоменателни и надгробни мраморни стели, свързани с различни етноси, живели в Бургас: българи, гърци, евреи, арменци, турци – от ХVІІ до началото на ХХ век.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Бургас. Всички права запазени.</p>
+</footer>
+</body>
+</html>
