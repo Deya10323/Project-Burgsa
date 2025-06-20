@@ -32,37 +32,32 @@
       flex-direction: column;
     }
 
-    header {
-      background-color: var(--primary);
-      color: var(--light);
+   header {
+      background-color: #012a4a;
       padding: 20px;
-      text-align: center;
+      color: white;
     }
-
-    header nav h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    header nav ul {
-      list-style: none;
+    nav {
       display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 0;
-      margin: 0;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
     }
-
-    header nav ul li a {
-      color: var(--light);
+    nav h1 {
+      font-size: 24px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    nav ul li a {
       text-decoration: none;
-      font-weight: 500;
+      color: white;
+      font-weight: bold;
       transition: color 0.3s;
     }
-
-    header nav ul li a:hover {
-      color: var(--accent);
+    nav ul li a:hover {
+      color: #c2d6dd;
     }
 
     main {
@@ -192,13 +187,12 @@
       <h1>Чудесата на Бургас</h1>
       <ul>
         <li><a href="index.html">Начало</a></li>
-        <li><a href="zabelezhitelnosti.html">Забележителности</a></li>
-        <li><a href="sabitiya.html">Събития</a></li>
-        <li><a href="kontakti.html">Контакти</a></li>
+        <li><a href="#">Забележителности</a></li>
+        <li><a href="#">Събития</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
     <h1>Свържете се с нас</h1>
     <p class="subtitle">Попълнете формата или използвайте контактите по-долу, за да се свържете с екипа ни в Бургас</p>
