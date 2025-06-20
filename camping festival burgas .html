@@ -65,6 +65,27 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       margin-bottom: 40px;
     }
+    .camping-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .camping-images img {
+      width: 320px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .camping-images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
     footer {
       text-align: center;
       padding: 20px;
@@ -107,6 +128,13 @@
     <div class="highlight">
       <p style="font-size: 1.2rem; font-weight: bold;">📸 Сподели изживяването с <em>#ExploreBurgas2025</em></p>
     </div>
+
+    <div class="camping-images">
+      <img src="https://cdn.vanlife.bez.coffee/wp-content/uploads/2025/01/explore-the-world-%E2%80%93-burgas-2025.jpg" alt="Къмпинг фестивал 1" />
+      <img src="https://static.bnr.bg/gallery/cr/86b0a8b6c7193746f75051866df768a3.jpg" alt="Къмпинг фестивал 2" />
+      <img src="https://cdn.vanlife.bez.coffee/wp-content/uploads/2024/03/caravan13.jpg" alt="Къмпинг фестивал 3" />
+    </div>
+
   </main>
 
   <footer>
