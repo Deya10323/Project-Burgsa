@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Чудесата на Бургас</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Cambria, serif;
+      background: #f5faff;
+      color: #333;
+    }
+
+    header {
+      background-color: #012a4a;
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav h1 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #014f86;
+      min-width: 180px;
+      z-index: 1;
+    }
+
+    .dropdown-content li a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .hero {
+      background-color: #c2d6dd;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .attractions {
+      padding: 40px 20px;
+    }
+
+    .attractions h3 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: #014f86;
+      text-align: center;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .card {
+      width: 750px;
+      height: 750px;
+      background-color: #e8f5e9;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 680px;
+      object-fit: contain;
+      background-color: white;
+      border-radius: 8px;
+    }
+
+    .card p {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #014f86;
+      margin-top: 10px;
+    }
+
+    .card a.read-more {
+      font-size: 1.1rem;
+      color: #012a4a;
+      text-decoration: underline;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+
+    .events {
+      padding: 40px 20px;
+      background-color: #f1f8e9;
+      text-align: center;
+    }
+
+    .events h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #014f86;
+    }
+
+    .event-card {
+      background-color: #dcedc8;
+      margin: 20px auto;
+      padding: 30px;
+      max-width: 800px;
+      border-left: 6px solid #2c7da0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    .event-card:hover {
+      background-color: #f0f4c3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #012a4a;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Чудесата на Бургас</h1>
+    <ul>
+      <li><a href="#">Начало</a></li>
+      <li class="dropdown">
+        <a href="#">Забележителности ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="#morska">Морска градина</a></li>
+          <li><a href="#muzei">Археологически музей</a></li>
+          <li><a href="#anastasia">Остров Света Анастасия</a></li>
+          <li><a href="#vaya">Езеро Вая</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Събития ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="#krisko">Старият Криско</a></li>
+          <li><a href="#funandsun">Fun and Sun</a></li>
+          <li><a href="#camping">Camping Festival</a></li>
+          <li><a href="#spice">Spice Music Festival</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>Научете интересни неща за Бургас</h2>
+  </section>
+
+  <section class="attractions" id="morska">
+    <h3>Морската градина</h3>
+    <div class="grid-container">
+      <div class="card">
+        <img src="https://static.pochivka.bg/sights.bgstay.com/images/02/2293/54db8a42c4d8d.jpg" alt="Морска градина" />
+        <p>Морска градина</p>
+        <a class="read-more" href="morska.html" target="_blank">Прочети още</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="attractions" id="muzei">
+    <h3>Археологически музей</h3>
+    <div class="grid-container">
+      <div class="card">
+        <img src="https://www.eranova.bg/files/173822874483126.jpg" alt="Археологически музей" />
+        <p>Археологически музей</p>
+        <a class="read-more" href="muzei.html" target="_blank">Прочети още</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="attractions" id="anastasia">
+    <h3>Остров Света Анастасия</h3>
+    <div class="grid-container">
+      <div class="card">
+        <img src="https://www.burgas.bg/uploads/posts/2024/4e9d2984ef1e7abb29fcfc77e68005ce.jpg" alt="Остров Света Анастасия" />
+        <p>Света Анастасия</p>
+        <a class="read-more" href="anastasia.html" target="_blank">Прочети още</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="attractions" id="vaya">
+    <h3>Езеро Вая</h3>
+    <div class="grid-container">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Lake-burgas-dinev.jpg" alt="Езеро Вая" />
+        <p>Езеро Вая</p>
+        <a class="read-more" href="vaya.html" target="_blank">Прочети още</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="events">
+    <h3>Събития през 2025г.</h3>
+
+    <div class="event-card" id="krisko">
+      <p>Старият Криско – 6 юли 2025, Fabric Club</p>
+    </div>
+
+    <div class="event-card" id="funandsun">
+      <p>Fun and Sun Weekend – 30 май – 1 юни 2025</p>
+    </div>
+
+    <div class="event-card" id="camping">
+      <p>Camping Festival – 19–21 юли 2025</p>
+    </div>
+
+    <div class="event-card" id="spice">
+      <p>Spice Music Festival – 8–9 август 2025</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Бургас. Всички права запазени.</p>
+</footer>
+
+</body>
+</html>
