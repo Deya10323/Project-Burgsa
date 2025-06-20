@@ -25,13 +25,14 @@
 
     nav {
       display: flex;
+      justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      padding-left: 40px;
     }
 
     nav h1 {
       font-size: 24px;
-      margin-left: 20px;
     }
 
     nav ul {
@@ -39,8 +40,7 @@
       list-style: none;
       gap: 20px;
       flex-wrap: wrap;
-      margin-left: auto;
-      margin-right: 40px; /* менюто се измества надясно, без да излиза */
+      margin-right: 20px;
     }
 
     nav ul li {
@@ -163,11 +163,46 @@
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
       background-color: #012a4a;
       color: white;
-      margin-top: 40px;
+      padding: 40px 20px;
+    }
+
+    footer p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sitemap {
+      background-color: #012a4a;
+      text-align: center;
+    }
+
+    .sitemap h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .sitemap-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 300px;
+    }
+
+    .sitemap-list li {
+      margin: 8px 0;
+    }
+
+    .sitemap-list a {
+      color: #e0f7fa;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .sitemap-list a:hover {
+      color: #90e0ef;
     }
   </style>
 </head>
@@ -272,7 +307,23 @@
 
 <footer>
   <p>© 2025 Бургас. Всички права запазени.</p>
+  <section class="sitemap">
+    <h2>Карта на сайта</h2>
+    <ul class="sitemap-list">
+      <li><a href="index.html">Начало</a></li>
+      <li><a href="morska.html">Морската градина</a></li>
+      <li><a href="Sv Anastasiq.html">Остров Света Анастасия</a></li>
+      <li><a href="ezro_vaq.html">Езерото Вая</a></li>
+      <li><a href="muzej.html">Археологически музей</a></li>
+      <li><a href="#">Събитие</a></li>
+      <li><a href="#">Събитие</a></li>
+      <li><a href="#">Събитие</a></li>
+      <li><a href="#">Събитие</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+  </section>
 </footer>
 
 </body>
 </html>
+
