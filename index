@@ -182,20 +182,20 @@
 
   <div class="modal modal1">
     <div class="modal-box">
-      <img src="https://www.primeabg.com/upload/userfiles/images/36328561_2401629849850831_5356514724299145216_n.jpg" alt="Морската градина" />
+      <img src="Pictures/index_morska.jpg" alt="Морската градина" />
       <h2>Морската градина</h2>
       <p>Емблематичен парк в Бургас с красиви алеи, паметници и изглед към морето.</p>
-      <a href="file:///D:/%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B0%20%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%BD%D0%B0%20%D0%91%D1%83%D1%80%D0%B3%D0%B0%D1%81.html" target="_blank" rel="noopener noreferrer">Прочети повече</a><br />
+      <a href="morska.html" target="_blank" rel="noopener noreferrer">Прочети повече</a><br />
       <label for="popup1" class="close-btn">Затвори</label>
     </div>
   </div>
 
   <div class="modal modal2">
     <div class="modal-box">
-      <img src="https://www.gotoburgas.com/uploads/property/1e2abafbeeb5f203cdf11fd4e7c0caf4.png" alt="Остров Света Анастасия" />
+      <img src="Pictures/Ostrov.jpg" alt="Остров Света Анастасия" />
       <h2>Остров Света Анастасия</h2>
       <p>Остров с манастир, музей и ресторант, достъпен с лодка от Бургас.</p>
-      <a href="sveta-anastasia.html" target="_blank" rel="noopener noreferrer">Прочети повече</a><br />
+      <a href="Sv Anastasiq.html" target="_blank" rel="noopener noreferrer">Прочети повече</a><br />
       <label for="popup2" class="close-btn">Затвори</label>
     </div>
   </div>
@@ -222,13 +222,13 @@
       <div class="grid-container">
        
         <label for="popup1" class="card">
-          <img src="https://www.primeabg.com/upload/userfiles/images/36328561_2401629849850831_5356514724299145216_n.jpg" alt="Морската градина" />
+          <img src="Pictures/index_morska.jpg" alt="Морската градина" />
           <p>Морската градина</p>
         </label>
 
       
         <label for="popup2" class="card">
-          <img src="https://www.gotoburgas.com/uploads/property/1e2abafbeeb5f203cdf11fd4e7c0caf4.png" alt="Остров Света Анастасия" />
+          <img src="Pictures/Ostrov.jpg" alt="Остров Света Анастасия" />
           <p>Остров Света Анастасия</p>
         </label>
       </div>
@@ -250,9 +250,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
-
