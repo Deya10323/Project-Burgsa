@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Карта на сайта</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background: linear-gradient(to right, #e0f7fa, #fff);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #012a4a;
+      padding: 20px;
+      color: white;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav h1 {
+      font-size: 24px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #c2d6dd;
+    }
+
+    .sitemap {
+      background-color: #e3f2fd;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .sitemap h2 {
+      font-size: 2rem;
+      color: #014f86;
+      margin-bottom: 30px;
+    }
+    .sitemap-list {
+      list-style: none;
+      padding: 0;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .sitemap-list li {
+      margin: 15px 0;
+    }
+    .sitemap-list a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #012a4a;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+    .sitemap-list a:hover {
+      color: #468faf;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #012a4a;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Чудесата на Бургас</h1>
+      <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="zabelezhitelnosti.html">Забележителности</a></li>
+        <li><a href="sabitiya.html">Събития</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sitemap">
+      <h2>Карта на сайта</h2>
+      <ul class="sitemap-list">
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="morska.html">Морската градина</a></li>
+        <li><a href="Sv Anastasiq.html">Остров Света Анастасия</a></li>
+        <li><a href="ezro_vaq.html">Езерото Вая</a></li>
+        <li><a href="muzej.html">Археологически музей- Бургас</a></li>
+        <li><a href="#">Събитие</a></li>
+        <li><a href="#">Събитие</a></li>
+        <li><a href="#">Събитие</a></li>
+        <li><a href="#">Събитие</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Бургас. Всички права запазени.</p>
+  </footer>
+
+</body>
+</html>
 
