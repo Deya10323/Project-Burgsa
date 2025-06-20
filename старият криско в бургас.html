@@ -7,19 +7,39 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background: linear-gradient(to right, #d0f0c0, #fff);
+      color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #e60000;
+      background-color: #012a4a;
       padding: 20px;
+      color: white;
       text-align: center;
+      position: relative;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 28px;
+      font-weight: normal;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 8px 16px;
+      font-size: 1rem;
+      background-color: #26a69a;
       color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #00796b;
     }
     .hero {
       background: url("https://upload.wikimedia.org/wikipedia/commons/1/19/Krisko.jpg") no-repeat center center;
@@ -28,67 +48,91 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      text-shadow: 2px 2px 10px #000;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
     }
     .hero h2 {
-      background-color: rgba(0,0,0,0.6);
-      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px 40px;
       border-radius: 10px;
-      font-size: 2em;
+      font-size: 2rem;
+      color: #012a4a;
+      font-weight: bold;
     }
-    .content {
+    main.content {
       max-width: 900px;
       margin: 40px auto;
       padding: 20px;
-      background-color: #1e1e1e;
+      background-color: #e0f2f1;
       border-radius: 10px;
-      box-shadow: 0 0 20px rgba(255,0,0,0.5);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      color: #004d40;
     }
-    .content h3 {
-      color: #ffcc00;
+    main.content h3 {
+      color: #00796b;
+      margin-bottom: 15px;
     }
-    .content ul {
+    main.content p, main.content ul {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+    main.content ul {
       padding-left: 20px;
+      list-style-type: disc;
     }
-    .content a {
-      color: #ffcc00;
+    main.content a {
+      color: #004d40;
       font-weight: bold;
+      text-decoration: none;
+      border-bottom: 1px solid #004d40;
+      transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    }
+    main.content a:hover {
+      color: #00796b;
+      border-bottom-color: #00796b;
     }
     .images {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 15px;
       margin-top: 30px;
+      justify-content: center;
     }
     .images img {
-      width: 100%;
-      max-width: 400px;
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
       border-radius: 10px;
-      box-shadow: 0 0 10px #ff0033;
+      box-shadow: 0 4px 8px rgba(38,166,154,0.3);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(38,166,154,0.6);
     }
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #000;
-      color: #aaa;
+      background-color: #012a4a;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Старият Криско в Бургас</h1>
+    <button class="back-button" onclick="history.back()">⬅ Назад</button>
+    <h1>Старият Криско в Бургас - 6 Юли</h1>
   </header>
 
-  <section class="hero">
-    <h2>6 Юли 2024  </h2>
-  </section>
 
-  <section class="content">
+  <main class="content">
     <h3>🔥 Готов ли си за нощта?</h3>
     <p><strong>📍 Място:</strong> Fabric Club, ул. „Стефан Стамболов“ 53, Бургас</p>
     <p><strong>🕐 Начало:</strong> 6 юли 2024, 01:00 ч.</p>
-    <p><strong>🎟️ Билети:</strong> 25–30 лв. · <a href="https://articket.eu" target="_blank">Купи от Articket.eu</a></p>
+    <p><strong>🎟️ Билети:</strong> 25–30 лв. · <a href="https://articket.eu" target="_blank" rel="noopener noreferrer">Купи от Articket.eu</a></p>
 
     <p>Очаквай:</p>
     <ul>
@@ -98,18 +142,17 @@
     </ul>
 
     <p>📲 Последвай Криско:<br>
-      Instagram: <a href="https://instagram.com/kriskobeats">@kriskobeats</a><br>
-      Facebook: <a href="https://facebook.com/KriskoOfficial">Krisko Official</a>
+      Instagram: <a href="https://instagram.com/kriskobeats" target="_blank" rel="noopener noreferrer">@kriskobeats</a><br>
+      Facebook: <a href="https://facebook.com/KriskoOfficial" target="_blank" rel="noopener noreferrer">Krisko Official</a>
     </p>
 
-<div class="images">
-  <img src="https://travelbulgaria.news/wp-content/uploads/2017/05/krisko3.jpg" alt="Криско на сцена">
-  <img src="https://media.stubhubstatic.com/stubhub-v2-catalog/d_vgg-defaultLogo.jpg/t_f-fs-0fv%2Cq_auto%3Alow%2Cf_auto%2Cc_fill%2C%24w_280_mul_3%2C%24h_180_mul_3/categories/150319087/6542385" alt="Криско стил">
-  <img src="https://balkanika.tv/wp-content/uploads/2021/02/krisko.jpg" alt="Криско с микрофон">
-  <img src="https://secret.bg/wp-content/uploads/2022/01/271930636_911916729502211_1394939794966289837_n.jpg" alt="Криско">
-</div>
-
-  </section>
+    <div class="images">
+      <img src="https://travelbulgaria.news/wp-content/uploads/2017/05/krisko3.jpg" alt="Криско на сцена">
+      <img src="https://media.stubhubstatic.com/stubhub-v2-catalog/d_vgg-defaultLogo.jpg/t_f-fs-0fv%2Cq_auto%3Alow%2Cf_auto%2Cc_fill%2C%24w_280_mul_3%2C%24h_180_mul_3/categories/150319087/6542385" alt="Криско стил">
+      <img src="https://balkanika.tv/wp-content/uploads/2021/02/krisko.jpg" alt="Криско с микрофон">
+      <img src="https://secret.bg/wp-content/uploads/2022/01/271930636_911916729502211_1394939794966289837_n.jpg" alt="Криско">
+    </div>
+  </main>
 
   <footer>
     © 2024 Криско Live | Всички права запазени
